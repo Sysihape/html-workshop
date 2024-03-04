@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">    <!-- Tähestik, mida kasutame  -->
     <link rel="stylesheet" type="text/css" href="style.css"/> <!-- Ühendus CSS-i ja meie lehe vahel -->
-    <title>Minu veebileht</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
+    <title>Taukari fanpage</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
 </head>
 
 <body>
-
+<style>
+    p {
+        font-size: 20px;
+        font-family: "Noto Sans Armenian";
+        margin: 15px;
+    }
+</style>
 <!-- Pealkiri, pilt ja väike kirjeldus -->
 
 <div class="container" style="padding: 1em">
     <div id="textBox">
-        <h1>Nimetus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur eget lectus mi. Donec lorem magna,
-            elementum ac dui in, posuere pharetra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur eget lectus mi. Donec lorem magna, elementum ac dui in, posuere pharetra odio.</p>
+        <h1>Karl-Erik Taukar</h1>
+        <p>Eesti legendaarseim, sigmaim, SEKSIKAIM, robustseim, suurim, eepiliseim, kangelaslikuim, kangekaelseim,kaunim ,kuldseim ja PARIM MEES SIIN ISAMAAL, KARL-ERIK TAUKARNÕI!!</p>
     </div>
-    <img id="photo" src="images/img.png">
+    <img id="photo" src="images/taukarnoi.jpg">
 </div>
 
 <!-- Lõbusad faktid -->
 
 <div class="container">
     <div class="card">
-        <!-- Tee see osa ise! -->
+        <img id="photo" src="images/argusekunn.jfif">
+       <p>Ta on tuntud, kui meie Eestimaa kõige suurem sigma ja Arguse nautija.</p>
+        <button onclick="window.location.href='https://www.instagram.com/karleriktaukarofficial/?hl=en';">Kullakese instagram</button>
     </div>
     <div class="card">
-        <!-- Tee see osa ise! -->
+        <button id="argus">Click me issi</button>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
@@ -37,7 +43,7 @@
 <!-- Video -->
 
 <div class="container" style="flex-flow: column">
-    <iframe id="video" src="https://www.youtube.com/embed/WLT7TDGzXGU?si=z5_UTSHfVFkCDm6X" title="YouTube video player"
+    <iframe id="video" src="https://www.youtube.com/watch?v=ZtfLzUHH93IX" title="Segased lood"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     <!-- max-width paneb ette piiri, et kui pikk võib tekst olla -->
@@ -56,5 +62,18 @@
 </div>
 
 </body>
-    
+<script>
+    let button = document.getElementById("argus");
+    button.addEventListener("click", function() {
+        let body = document.body;
+        if (body.style.getPropertyValue(background) == "white") {
+            body.style.background == "pink";
+        }
+        else {
+            body.style.background == "black";
+        }
+        body.style.background = "black";
+    });
+
+</script>
 </html>
